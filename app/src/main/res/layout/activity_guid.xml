@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*"
+    android:padding="10dp"
+    tools:context=".GuidActivity">
+
+
+    <TableRow>
+        <TextView android:layout_span="2" android:gravity="center" android:text="진료안내" android:textSize="32dp" android:textStyle="bold"></TextView>
+    </TableRow>
+    <TableRow android:padding="10dp">
+        <TextView android:text="평일"/>
+        <TextView android:text="AM 10:00~PM06:00"/>
+    </TableRow>
+    <TableRow android:padding="10dp">
+        <TextView android:text="토요일"/>
+        <TextView android:text="AM 10:00~PM01:00"/>
+    </TableRow>
+    <TableRow android:padding="10dp">
+        <TextView android:text="점심"/>
+        <TextView android:text="PM 12:00~PM 02:00"/>
+    </TableRow>
+    <TableRow android:padding="10dp">
+        <TextView android:text="월~공휴일"/>
+        <TextView android:text="휴진"/>
+    </TableRow>
+    <TableRow>
+        <TextView android:background="@color/teal_200"  android:layout_span="2" android:gravity="center" android:text="오시는 길" android:textSize="32dp" android:textStyle="bold"/>
+    </TableRow>
+    <TableRow android:padding="10dp" android:gravity="center">
+        <ImageView
+            android:src="@drawable/sub01_ico01"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/img_map"/>
+        <TextView android:text="[주소]\n 서울시 강남구 광평로 20"/>
+    </TableRow>
+    <TableRow android:padding="10dp" android:gravity="center">
+        <ImageView android:src="@drawable/sub01_ico02" android:layout_width="70dp" android:layout_height="70dp"/>
+        <TextView android:text="[지하철 이용]\n 3호선 일원역 4번 출구 500m"/>
+    </TableRow>
+    <TableRow android:padding="10dp" android:gravity="center">
+        <ImageView android:src="@drawable/sub01_ico03" android:layout_width="70dp" android:layout_height="70dp"/>
+        <TextView android:text="[버스 이용]\n 301,2022,3413,4319"/>
+    </TableRow>
+</TableLayout>
